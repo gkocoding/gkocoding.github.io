@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Georgi Radev — Software Developer</title>
+<meta name="description" content="Georgi Radev — software developer. Portfolio and project showcase.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Georgi Radev — Software Developer">
+<meta property="og:description" content="Portfolio and project showcase.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://georgiradev.tech/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Coordinate ruler bars (decorative, hidden on mobile) -->
+<div class="ruler ruler--top" aria-hidden="true"></div>
+<div class="ruler ruler--left" aria-hidden="true"></div>
+
+<!-- Crosshair cursor tracker (hero only) -->
+<div class="crosshair" id="crosshair" aria-hidden="true">
+  <div class="crosshair__v"></div>
+  <div class="crosshair__h"></div>
+  <div class="crosshair__coord" id="crosshairCoord">X000 Y000</div>
+</div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="nav__mark">GR<span class="nav__mark-dot">.</span></a>
+  <nav class="nav__links">
+    <a href="#about"><span class="nav__num">01</span> About</a>
+    <a href="#projects"><span class="nav__num">02</span> Projects</a>
+    <a href="#skills"><span class="nav__num">03</span> Skills</a>
+    <a href="#contact"><span class="nav__num">04</span> Contact</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="grid-bg" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">SOFTWARE DEVELOPER — PORTFOLIO REV. 01</p>
+      <h1 class="hero__title">GEORGI<br>RADEV</h1>
+      <p class="hero__subtitle">
+        <!-- EDIT: swap in your real one-line pitch -->
+        I design and build web applications, from backend systems to
+        the interfaces people actually touch.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View projects</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="title-block" aria-hidden="false">
+      <div class="title-block__row">
+        <span class="title-block__label">NAME</span>
+        <span class="title-block__value">Georgi Radev</span>
+      </div>
+      <div class="title-block__row">
+        <span class="title-block__label">ROLE</span>
+        <span class="title-block__value">Software Developer</span>
+      </div>
+      <div class="title-block__row">
+        <span class="title-block__label">BASED</span>
+        <!-- EDIT: your location -->
+        <span class="title-block__value">Bulgaria</span>
+      </div>
+      <div class="title-block__row">
+        <span class="title-block__label">STATUS</span>
+        <span class="title-block__value">Open to work</span>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <span class="section__num">01</span>
+      <h2 class="section__title">About</h2>
+    </div>
+
+    <div class="about">
+      <div class="about__text">
+        <!-- EDIT: replace with your real bio, 3-5 sentences -->
+        <p>
+          I'm a developer who likes understanding how things work by building
+          them from scratch. Most of what's below started as a way to learn
+          something new — a language, a framework, or just a stubborn bug I
+          wanted to fix.
+        </p>
+        <p>
+          This site itself is one of those projects: hand-built with plain
+          HTML, CSS and JavaScript, and hosted on GitHub Pages through the
+          GitHub Student Developer Pack.
+        </p>
+      </div>
+
+      <dl class="specs">
+        <div class="specs__row">
+          <dt>Focus</dt>
+          <!-- EDIT -->
+          <dd>Full-stack web development</dd>
+        </div>
+        <div class="specs__row">
+          <dt>Currently</dt>
+          <!-- EDIT -->
+          <dd>Studying Computer Science</dd>
+        </div>
+        <div class="specs__row">
+          <dt>Interested in</dt>
+          <!-- EDIT -->
+          <dd>Systems, tooling, developer experience</dd>
+        </div>
+        <div class="specs__row">
+          <dt>Reachable at</dt>
+          <!-- EDIT -->
+          <dd>hello@georgiradev.tech</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section__head">
+      <span class="section__num">02</span>
+      <h2 class="section__title">Projects</h2>
+    </div>
+
+    <div class="sheets">
+
+      <!-- EDIT: replace each sheet with a real project -->
+      <article class="sheet">
+        <div class="sheet__header">
+          <span class="sheet__tag">SHEET 01 / 04</span>
+          <span class="sheet__status">Active</span>
+        </div>
+        <h3 class="sheet__title">Project Name One</h3>
+        <p class="sheet__desc">
+          One or two sentences describing what this project does and the
+          problem it solves. Keep it concrete — what does it actually do?
+        </p>
+        <ul class="sheet__stack">
+          <li>React</li>
+          <li>Node.js</li>
+          <li>PostgreSQL</li>
+        </ul>
+        <div class="sheet__links">
+          <a href="#" class="sheet__link">Source →</a>
+          <a href="#" class="sheet__link">Live demo →</a>
+        </div>
+      </article>
+
+      <article class="sheet">
+        <div class="sheet__header">
+          <span class="sheet__tag">SHEET 02 / 04</span>
+          <span class="sheet__status">Active</span>
+        </div>
+        <h3 class="sheet__title">Project Name Two</h3>
+        <p class="sheet__desc">
+          One or two sentences describing what this project does and the
+          problem it solves.
+        </p>
+        <ul class="sheet__stack">
+          <li>Python</li>
+          <li>Flask</li>
+          <li>Docker</li>
+        </ul>
+        <div class="sheet__links">
+          <a href="#" class="sheet__link">Source →</a>
+        </div>
+      </article>
+
+      <article class="sheet">
+        <div class="sheet__header">
+          <span class="sheet__tag">SHEET 03 / 04</span>
+          <span class="sheet__status">Archived</span>
+        </div>
+        <h3 class="sheet__title">Project Name Three</h3>
+        <p class="sheet__desc">
+          One or two sentences describing what this project does and the
+          problem it solves.
+        </p>
+        <ul class="sheet__stack">
+          <li>JavaScript</li>
+          <li>Express</li>
+        </ul>
+        <div class="sheet__links">
+          <a href="#" class="sheet__link">Source →</a>
+          <a href="#" class="sheet__link">Live demo →</a>
+        </div>
+      </article>
+
+      <article class="sheet">
+        <div class="sheet__header">
+          <span class="sheet__tag">SHEET 04 / 04</span>
+          <span class="sheet__status">Active</span>
+        </div>
+        <h3 class="sheet__title">This Site</h3>
+        <p class="sheet__desc">
+          A hand-built portfolio and project showcase — static HTML/CSS/JS,
+          no framework, deployed via GitHub Pages with a custom domain.
+        </p>
+        <ul class="sheet__stack">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <div class="sheet__links">
+          <a href="https://github.com/gkocoding/gkocoding.github.io" class="sheet__link">Source →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section__head">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Skills</h2>
+    </div>
+
+    <table class="parts-list">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- EDIT: adjust to your real stack -->
+        <tr><td>JavaScript</td><td>Language</td></tr>
+        <tr><td>Python</td><td>Language</td></tr>
+        <tr><td>HTML &amp; CSS</td><td>Language</td></tr>
+        <tr><td>React</td><td>Framework</td></tr>
+        <tr><td>Node.js</td><td>Runtime</td></tr>
+        <tr><td>PostgreSQL</td><td>Database</td></tr>
+        <tr><td>Git &amp; GitHub</td><td>Tool</td></tr>
+        <tr><td>Docker</td><td>Tool</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--contact" id="contact">
+    <div class="section__head">
+      <span class="section__num">04</span>
+      <h2 class="section__title">Contact</h2>
+    </div>
+
+    <div class="contact-block">
+      <p class="contact-block__lead">
+        Have a project in mind, or just want to talk shop? Reach out.
+      </p>
+      <div class="contact-block__grid">
+        <!-- EDIT: real links -->
+        <a href="mailto:hello@georgiradev.tech" class="contact-block__item">
+          <span class="contact-block__label">Email</span>
+          <span class="contact-block__value">hello@georgiradev.tech</span>
+        </a>
+        <a href="https://github.com/gkocoding" class="contact-block__item">
+          <span class="contact-block__label">GitHub</span>
+          <span class="contact-block__value">github.com/gkocoding</span>
+        </a>
+        <a href="#" class="contact-block__item">
+          <span class="contact-block__label">LinkedIn</span>
+          <span class="contact-block__value">linkedin.com/in/yourname</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Georgi Radev</span>
+  <span>Built by hand · Hosted on GitHub Pages</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
