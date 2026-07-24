@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Georgi Radev — Software Developer</title>
+<meta name="description" content="Georgi Radev — software developer. Portfolio and project showcase.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#121212">
+
+<meta property="og:title" content="Georgi Radev — Software Developer">
+<meta property="og:description" content="Portfolio and project showcase.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://georgiradev.tech/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="glow" id="glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="#top" class="nav__mark">Georgi Radev</a>
+  <nav class="nav__links">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact" class="nav__cta">Contact</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <p class="hero__eyebrow reveal" data-reveal>Software Developer</p>
+    <h1 class="hero__title">
+      <span class="reveal" data-reveal>Georgi</span>
+      <span class="reveal hero__title--italic" data-reveal>Radev</span>
+    </h1>
+    <p class="hero__subtitle reveal" data-reveal>
+      I build with Python, C++, C#, Java and JavaScript — mostly
+      automation, tooling, and small utilities that do one job well.
+    </p>
+    <div class="hero__actions reveal" data-reveal>
+      <a href="#work" class="btn btn--primary magnetic"><span>View work</span></a>
+      <a href="#contact" class="btn btn--ghost magnetic"><span>Get in touch</span></a>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Python</span><span>C++</span><span>C#</span><span>Java</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+      <span>Python</span><span>C++</span><span>C#</span><span>Java</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <p class="section__eyebrow reveal" data-reveal>About</p>
+
+    <p class="about__lead reveal" data-reveal>
+      I like understanding how things work by building them from scratch.
+    </p>
+
+    <div class="about__body reveal" data-reveal>
+      <p>
+        Most of what I build starts as a way to learn something new — a
+        scraper, a scheduler, a small generator, whatever the problem calls
+        for. I work primarily in Python, with C++, C#, and Java in the mix,
+        and JavaScript, HTML and CSS on the front end.
+      </p>
+    </div>
+
+    <div class="meta-row reveal" data-reveal>
+      <div class="meta-row__item">
+        <span class="meta-row__label">Focus</span>
+        <span class="meta-row__value">Automation &amp; tooling</span>
+      </div>
+      <div class="meta-row__item">
+        <span class="meta-row__label">Status</span>
+        <span class="meta-row__value">Open to work</span>
+      </div>
+      <div class="meta-row__item">
+        <span class="meta-row__label">Reach me</span>
+        <span class="meta-row__value">contact@georgiradev.tech</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="section" id="work">
+    <p class="section__eyebrow reveal" data-reveal>Selected Work</p>
+
+    <ol class="work-list">
+      <li class="work-item reveal" data-reveal>
+        <a href="https://github.com/gkocoding/python-scraper-scheduler" class="work-item__link">
+          <span class="work-item__index">01</span>
+          <span class="work-item__body">
+            <span class="work-item__title">Python Scraper Scheduler</span>
+            <span class="work-item__desc">Schedules and runs web scraping jobs automatically at set intervals.</span>
+          </span>
+          <span class="work-item__tag">Python</span>
+          <span class="work-item__arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+      <li class="work-item reveal" data-reveal>
+        <a href="https://github.com/gkocoding/python-web-scrapper" class="work-item__link">
+          <span class="work-item__index">02</span>
+          <span class="work-item__body">
+            <span class="work-item__title">Python Web Scraper</span>
+            <span class="work-item__desc">Pulls structured data out of web pages — the tool behind the scheduler above.</span>
+          </span>
+          <span class="work-item__tag">Python</span>
+          <span class="work-item__arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+      <li class="work-item reveal" data-reveal>
+        <a href="https://github.com/gkocoding/RandomSentencesGeneratorByGkocoding" class="work-item__link">
+          <span class="work-item__index">03</span>
+          <span class="work-item__body">
+            <span class="work-item__title">Random Sentence Generator</span>
+            <span class="work-item__desc">A small, self-contained utility for generating random sentences.</span>
+          </span>
+          <span class="work-item__tag">Python</span>
+          <span class="work-item__arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <p class="section__eyebrow reveal" data-reveal>Skills</p>
+
+    <div class="skill-groups reveal" data-reveal>
+      <div class="skill-group">
+        <span class="skill-group__label">Languages</span>
+        <div class="skill-group__tags">
+          <span>Python</span><span>C++</span><span>C#</span><span>Java</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <span class="skill-group__label">Frontend</span>
+        <div class="skill-group__tags">
+          <span>JavaScript</span><span>HTML</span><span>CSS</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <span class="skill-group__label">Tools</span>
+        <div class="skill-group__tags">
+          <span>Git</span><span>GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--contact" id="contact">
+    <p class="section__eyebrow reveal" data-reveal>Contact</p>
+    <h2 class="contact__title reveal" data-reveal>Let's build<br>something.</h2>
+
+    <div class="contact__links reveal" data-reveal>
+      <a href="mailto:contact@georgiradev.tech" class="contact__email magnetic">
+        <span>contact@georgiradev.tech</span>
+      </a>
+      <a href="https://github.com/gkocoding" class="contact__secondary">github.com/gkocoding →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Georgi Radev</span>
+  <span>Built by hand · Hosted on GitHub Pages</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
