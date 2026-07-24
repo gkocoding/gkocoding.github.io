@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Georgi Radev — Software Developer</title>
 <meta name="description" content="Georgi Radev — software developer. Portfolio and project showcase.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#121212">
 
-<!-- Open Graph -->
 <meta property="og:title" content="Georgi Radev — Software Developer">
 <meta property="og:description" content="Portfolio and project showcase.">
 <meta property="og:type" content="website">
@@ -20,11 +21,9 @@
 </head>
 <body>
 
-<!-- Coordinate ruler bars (decorative, hidden on mobile) -->
 <div class="ruler ruler--top" aria-hidden="true"></div>
 <div class="ruler ruler--left" aria-hidden="true"></div>
 
-<!-- Crosshair cursor tracker (hero only) -->
 <div class="crosshair" id="crosshair" aria-hidden="true">
   <div class="crosshair__v"></div>
   <div class="crosshair__h"></div>
@@ -34,10 +33,10 @@
 <header class="nav" id="nav">
   <a href="#top" class="nav__mark">GR<span class="nav__mark-dot">.</span></a>
   <nav class="nav__links">
-    <a href="#about"><span class="nav__num">01</span> About</a>
-    <a href="#projects"><span class="nav__num">02</span> Projects</a>
-    <a href="#skills"><span class="nav__num">03</span> Skills</a>
-    <a href="#contact"><span class="nav__num">04</span> Contact</a>
+    <a href="#about" data-section="about"><span class="nav__num">01</span> About</a>
+    <a href="#projects" data-section="projects"><span class="nav__num">02</span> Projects</a>
+    <a href="#skills" data-section="skills"><span class="nav__num">03</span> Skills</a>
+    <a href="#contact" data-section="contact"><span class="nav__num">04</span> Contact</a>
   </nav>
   <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -49,22 +48,25 @@
   <!-- ============ HERO ============ -->
   <section class="hero" id="top">
     <div class="grid-bg" aria-hidden="true"></div>
+    <div class="scan-line" aria-hidden="true"></div>
 
     <div class="hero__content">
-      <p class="hero__eyebrow">SOFTWARE DEVELOPER — PORTFOLIO REV. 01</p>
-      <h1 class="hero__title">GEORGI<br>RADEV</h1>
-      <p class="hero__subtitle">
-        <!-- EDIT: swap in your real one-line pitch -->
-        I design and build web applications, from backend systems to
-        the interfaces people actually touch.
+      <p class="hero__eyebrow reveal" data-reveal>SOFTWARE DEVELOPER — PORTFOLIO REV. 02</p>
+      <h1 class="hero__title">
+        <span class="reveal-line"><span class="reveal-word" data-reveal>GEORGI</span></span>
+        <span class="reveal-line"><span class="reveal-word" data-reveal>RADEV</span></span>
+      </h1>
+      <p class="hero__subtitle reveal" data-reveal>
+        I build with Python, C++, C#, Java and JavaScript — mostly
+        automation, tooling, and small utilities that do one job well.
       </p>
-      <div class="hero__actions">
+      <div class="hero__actions reveal" data-reveal>
         <a href="#projects" class="btn btn--primary">View projects</a>
         <a href="#contact" class="btn btn--ghost">Get in touch</a>
       </div>
     </div>
 
-    <div class="title-block" aria-hidden="false">
+    <div class="title-block reveal" data-reveal>
       <div class="title-block__row">
         <span class="title-block__label">NAME</span>
         <span class="title-block__value">Georgi Radev</span>
@@ -74,9 +76,8 @@
         <span class="title-block__value">Software Developer</span>
       </div>
       <div class="title-block__row">
-        <span class="title-block__label">BASED</span>
-        <!-- EDIT: your location -->
-        <span class="title-block__value">Bulgaria</span>
+        <span class="title-block__label">STACK</span>
+        <span class="title-block__value">Py · C++ · C# · Java</span>
       </div>
       <div class="title-block__row">
         <span class="title-block__label">STATUS</span>
@@ -91,47 +92,42 @@
 
   <!-- ============ ABOUT ============ -->
   <section class="section" id="about">
-    <div class="section__head">
+    <div class="section__head reveal" data-reveal>
       <span class="section__num">01</span>
       <h2 class="section__title">About</h2>
     </div>
 
     <div class="about">
-      <div class="about__text">
-        <!-- EDIT: replace with your real bio, 3-5 sentences -->
+      <div class="about__text reveal" data-reveal>
         <p>
           I'm a developer who likes understanding how things work by building
-          them from scratch. Most of what's below started as a way to learn
-          something new — a language, a framework, or just a stubborn bug I
-          wanted to fix.
+          them from scratch — scrapers, schedulers, small generators, whatever
+          the problem calls for. I work primarily in Python, with C++, C#,
+          and Java in the mix, and JavaScript, HTML and CSS on the front end.
         </p>
         <p>
-          This site itself is one of those projects: hand-built with plain
-          HTML, CSS and JavaScript, and hosted on GitHub Pages through the
+          This site is one of those builds too — hand-written HTML, CSS and
+          JavaScript with no framework, hosted on GitHub Pages through the
           GitHub Student Developer Pack.
         </p>
       </div>
 
-      <dl class="specs">
+      <dl class="specs reveal" data-reveal>
         <div class="specs__row">
-          <dt>Focus</dt>
-          <!-- EDIT -->
-          <dd>Full-stack web development</dd>
+          <dt>Languages</dt>
+          <dd>Python, C++, C#, Java</dd>
         </div>
         <div class="specs__row">
-          <dt>Currently</dt>
-          <!-- EDIT -->
-          <dd>Studying Computer Science</dd>
+          <dt>Frontend</dt>
+          <dd>JavaScript, HTML, CSS</dd>
         </div>
         <div class="specs__row">
           <dt>Interested in</dt>
-          <!-- EDIT -->
-          <dd>Systems, tooling, developer experience</dd>
+          <dd>Automation, tooling, scripting</dd>
         </div>
         <div class="specs__row">
           <dt>Reachable at</dt>
-          <!-- EDIT -->
-          <dd>hello@georgiradev.tech</dd>
+          <dd>contact@georgiradev.tech</dd>
         </div>
       </dl>
     </div>
@@ -139,92 +135,65 @@
 
   <!-- ============ PROJECTS ============ -->
   <section class="section" id="projects">
-    <div class="section__head">
+    <div class="section__head reveal" data-reveal>
       <span class="section__num">02</span>
       <h2 class="section__title">Projects</h2>
     </div>
 
     <div class="sheets">
 
-      <!-- EDIT: replace each sheet with a real project -->
-      <article class="sheet">
+      <article class="sheet reveal" data-reveal>
         <div class="sheet__header">
-          <span class="sheet__tag">SHEET 01 / 04</span>
+          <span class="sheet__tag">SHEET 01 / 03</span>
           <span class="sheet__status">Active</span>
         </div>
-        <h3 class="sheet__title">Project Name One</h3>
+        <h3 class="sheet__title">Python Scraper Scheduler</h3>
         <p class="sheet__desc">
-          One or two sentences describing what this project does and the
-          problem it solves. Keep it concrete — what does it actually do?
-        </p>
-        <ul class="sheet__stack">
-          <li>React</li>
-          <li>Node.js</li>
-          <li>PostgreSQL</li>
-        </ul>
-        <div class="sheet__links">
-          <a href="#" class="sheet__link">Source →</a>
-          <a href="#" class="sheet__link">Live demo →</a>
-        </div>
-      </article>
-
-      <article class="sheet">
-        <div class="sheet__header">
-          <span class="sheet__tag">SHEET 02 / 04</span>
-          <span class="sheet__status">Active</span>
-        </div>
-        <h3 class="sheet__title">Project Name Two</h3>
-        <p class="sheet__desc">
-          One or two sentences describing what this project does and the
-          problem it solves.
+          A Python tool for scheduling and running web scraping jobs
+          automatically at set intervals, so data collection doesn't need
+          to be triggered by hand.
         </p>
         <ul class="sheet__stack">
           <li>Python</li>
-          <li>Flask</li>
-          <li>Docker</li>
         </ul>
         <div class="sheet__links">
-          <a href="#" class="sheet__link">Source →</a>
+          <a href="https://github.com/gkocoding/python-scraper-scheduler" class="sheet__link">Source →</a>
         </div>
       </article>
 
-      <article class="sheet">
+      <article class="sheet reveal" data-reveal>
         <div class="sheet__header">
-          <span class="sheet__tag">SHEET 03 / 04</span>
-          <span class="sheet__status">Archived</span>
-        </div>
-        <h3 class="sheet__title">Project Name Three</h3>
-        <p class="sheet__desc">
-          One or two sentences describing what this project does and the
-          problem it solves.
-        </p>
-        <ul class="sheet__stack">
-          <li>JavaScript</li>
-          <li>Express</li>
-        </ul>
-        <div class="sheet__links">
-          <a href="#" class="sheet__link">Source →</a>
-          <a href="#" class="sheet__link">Live demo →</a>
-        </div>
-      </article>
-
-      <article class="sheet">
-        <div class="sheet__header">
-          <span class="sheet__tag">SHEET 04 / 04</span>
+          <span class="sheet__tag">SHEET 02 / 03</span>
           <span class="sheet__status">Active</span>
         </div>
-        <h3 class="sheet__title">This Site</h3>
+        <h3 class="sheet__title">Python Web Scraper</h3>
         <p class="sheet__desc">
-          A hand-built portfolio and project showcase — static HTML/CSS/JS,
-          no framework, deployed via GitHub Pages with a custom domain.
+          A Python-based scraper for pulling structured data out of web
+          pages — the standalone tool behind the scheduler above.
         </p>
         <ul class="sheet__stack">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
+          <li>Python</li>
         </ul>
         <div class="sheet__links">
-          <a href="https://github.com/gkocoding/gkocoding.github.io" class="sheet__link">Source →</a>
+          <a href="https://github.com/gkocoding/python-web-scrapper" class="sheet__link">Source →</a>
+        </div>
+      </article>
+
+      <article class="sheet reveal" data-reveal>
+        <div class="sheet__header">
+          <span class="sheet__tag">SHEET 03 / 03</span>
+          <span class="sheet__status">Active</span>
+        </div>
+        <h3 class="sheet__title">Random Sentence Generator</h3>
+        <p class="sheet__desc">
+          A small utility that generates random sentences — a compact,
+          self-contained project for testing text generation logic.
+        </p>
+        <ul class="sheet__stack">
+          <li>Python</li>
+        </ul>
+        <div class="sheet__links">
+          <a href="https://github.com/gkocoding/RandomSentencesGeneratorByGkocoding" class="sheet__link">Source →</a>
         </div>
       </article>
 
@@ -233,12 +202,12 @@
 
   <!-- ============ SKILLS ============ -->
   <section class="section" id="skills">
-    <div class="section__head">
+    <div class="section__head reveal" data-reveal>
       <span class="section__num">03</span>
       <h2 class="section__title">Skills</h2>
     </div>
 
-    <table class="parts-list">
+    <table class="parts-list reveal" data-reveal>
       <thead>
         <tr>
           <th>Item</th>
@@ -246,43 +215,37 @@
         </tr>
       </thead>
       <tbody>
-        <!-- EDIT: adjust to your real stack -->
-        <tr><td>JavaScript</td><td>Language</td></tr>
         <tr><td>Python</td><td>Language</td></tr>
-        <tr><td>HTML &amp; CSS</td><td>Language</td></tr>
-        <tr><td>React</td><td>Framework</td></tr>
-        <tr><td>Node.js</td><td>Runtime</td></tr>
-        <tr><td>PostgreSQL</td><td>Database</td></tr>
+        <tr><td>C++</td><td>Language</td></tr>
+        <tr><td>C#</td><td>Language</td></tr>
+        <tr><td>Java</td><td>Language</td></tr>
+        <tr><td>JavaScript</td><td>Frontend</td></tr>
+        <tr><td>HTML</td><td>Frontend</td></tr>
+        <tr><td>CSS</td><td>Frontend</td></tr>
         <tr><td>Git &amp; GitHub</td><td>Tool</td></tr>
-        <tr><td>Docker</td><td>Tool</td></tr>
       </tbody>
     </table>
   </section>
 
   <!-- ============ CONTACT ============ -->
   <section class="section section--contact" id="contact">
-    <div class="section__head">
+    <div class="section__head reveal" data-reveal>
       <span class="section__num">04</span>
       <h2 class="section__title">Contact</h2>
     </div>
 
-    <div class="contact-block">
+    <div class="contact-block reveal" data-reveal>
       <p class="contact-block__lead">
         Have a project in mind, or just want to talk shop? Reach out.
       </p>
-      <div class="contact-block__grid">
-        <!-- EDIT: real links -->
-        <a href="mailto:hello@georgiradev.tech" class="contact-block__item">
+      <div class="contact-block__grid contact-block__grid--two">
+        <a href="mailto:contact@georgiradev.tech" class="contact-block__item">
           <span class="contact-block__label">Email</span>
-          <span class="contact-block__value">hello@georgiradev.tech</span>
+          <span class="contact-block__value">contact@georgiradev.tech</span>
         </a>
         <a href="https://github.com/gkocoding" class="contact-block__item">
           <span class="contact-block__label">GitHub</span>
           <span class="contact-block__value">github.com/gkocoding</span>
-        </a>
-        <a href="#" class="contact-block__item">
-          <span class="contact-block__label">LinkedIn</span>
-          <span class="contact-block__value">linkedin.com/in/yourname</span>
         </a>
       </div>
     </div>
